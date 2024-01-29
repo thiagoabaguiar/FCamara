@@ -15,197 +15,79 @@
 
 <body>
 
-    <header class="container-header flex-box-space-between bg-font-color-default height-header padding-default">
+    <header id="cabecalho">
 
-        <img id="logo_orange" src="./images/logo_orange.svg" alt="Logo Orange Portfólio">
-        <nav class="menu">
-            <ul class="flex-box-space-between">
-                <a href="">
-                    <li>Meus projetos</li>
-                </a>
-                <a href="">
-                    <li>Descobrir</li>
-                </a>
-            </ul>
-        </nav>
-        <div class="flex-box-space-between box-profile">
+        <div id="cabecalho_esquerdo">
+            <img id="logo_orange" src="./images/logo_orange.svg" alt="Logo Orange Portfólio">
+            <nav id="menu">
+                <ul class="flex-box-space-between">
+                    <a href="">
+                        <li>Meus projetos</li>
+                    </a>
+                    <a href="">
+                        <li>Descobrir</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="box-profile" class="flex-box-space-between">
             <img id="user-avatar" src="./images/user_avatar.svg" alt="Avatar Usuário">
-            <img id="icon_notification" src="./images/icon_notification.svg" alt="Ícone de Notificações">            
+            <img id="icon_notification" src="./images/icon_notification.svg" alt="Ícone de Notificações">
         </div>
 
     </header>
 
-    <main class="bg-font-color-alternative height-main flex-box-space-between padding-default">
+    <main class="flex-box-space-between">
 
-        <section class="box-for-text">
-            <a href="https://www.youtube.com/watch?v=sBhsXsISeRE" target="_blank">
-                <h1>Veja o guia definitivo para conquistar seus
-                    objetivos como DEV em 2022</h1>
-                <p>Lorem, ipsum dolor sit
-                    amet consectetur
-                    adipisicing elit. Ratione porro incidunt voluptates provident nam, expedita quibusdam obcaecati a ab
-                    nobis error, repudiandae quis, eligendi aut! Voluptates, consectetur! Praesentium, consequuntur
-                    delectus!</p>
-                <a href="https://www.youtube.com/watch?v=sBhsXsISeRE" target="_blank">
-                    <div class="flex-box-space-between">
-                        <p>Saiba mais...</p>
-                        <img src="./images/arrow-right.svg" alt="seta_saiba_mais">
-                    </div>
-                </a>
-            </a>
-        </section>
-
-        <a href="https://www.youtube.com/watch?v=sBhsXsISeRE" target="_blank">
-            <picture>
-                <source media="(max-width: 935px)" srcset="./images/img-1-287x175.png">
-                <source media="(max-width: 1100px)" srcset="./images/img-1-430x262.png">
-                <source media="(max-width: 1774px)" srcset="./images/img-1-574x350.png">
-                <source media="(max-width: 2070px)" srcset="./images/img-1-717x437.png">
-                <source media="(max-width: 2560px)" srcset="./images/img-1-896x547.png">
-                <img src="./images/img-1-574x350.png" alt="Código Fonte em Tela">
-            </picture>
-        </a>
+        <div id="profile_card">
+            <img id="user-photo" src="./images/user_photo.svg" alt="Foto Usuário">
+            <div id="user-data">
+                <h1 id="user-name">Camila Soares</h1>
+                <h2 id="user-country">Brasil</h2>
+                <button id="button_add_project" type="button">ADICIONAR PROJETO</button>
+            </div>
+        </div>
 
     </main>
 
-    <hr class="line-stretched"> <!-- linha verde que separa a tela -->
-    </hr>
+    <section>
 
-    <aside class="flex-box-space-between padding-default height-aside">
-        <section class="post-main">
-            <picture>
-                <source media="(max-width: 1100px)" srcset="./images/img-2-430x262.png">
-                <source media="(max-width: 1774px)" srcset="./images/img-2-574x350.png">
-                <source media="(max-width: 2150px)" srcset="./images/img-2-717x437.png">
-                <source media="(max-width: 2560px)" srcset="./images/img-2-896x547.png">
-                <img src="./images/img-2-574x350.png" alt="Notebook sobre uma mesa">
-            </picture>
-            <p>05 de Junho de 2022</p>
-            <h2>Começando no React em 2022</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusantium adipisci libero non delectus
-                tenetur vitae neque, animi, illum voluptates, minima ea reprehenderit dolorum, quidem, non quis
-                inventore earum dolorem.</p>
-        </section>
-
-        <section class="post-others">
-            <div>
-                <p>08 de Junho de 2022</p>
-                <h2>Conheça as principais técnicas para conseguir uma vaga internacional em programação</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ea reprehenderit dolorum, quidem, non
-                    quis inventore earum dolorem alias enim labore adipisci, libero non delectus tenetur vitae neque,
-                    animi, illum voluptates.</p>
-            </div>
-            <div class="flex-box-column-direction">
-                <p>12 de Junho de 2022</p>
-                <h2>Veja a evolução do Front-end na prática</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit libero non delectus tenetur vitae neque,
-                    animi, illum voluptates dolore nostrum adipisci dolores deleniti porro unde dolorem voluptatum
-                    veniam ex nam.</p>
-            </div>
-        </section>
-
-    </aside>
-
-    <hr class="line-stretched2"> <!-- linha lilás que separa a tela -->
-    </hr>
-
-    <section class="grid-container padding-default">
-
-        <a href="https://www.pravaler.com.br/10-dicas-para-conseguir-um-emprego-mais-rapido/" target="_blank">
-            <article>
-                <picture>
-                    <source media="(max-width: 810px)" srcset="./images/img-3-205x135.png">
-                    <source media="(max-width: 930px)" srcset="./images/img-3-246x162.png">
-                    <source media="(max-width: 1060px)" srcset="./images/img-3-287x189.png">
-                    <source media="(max-width: 1200px)" srcset="./images/img-3-328x216.png">
-                    <source media="(max-width: 1320px)" srcset="./images/img-3-369x243.png">
-                    <source media="(max-width: 1850px)" srcset="./images/img-3-410x270.png">
-                    <source media="(max-width: 2230px)" srcset="./images/img-3-512x337.png">
-                    <source media="(max-width: 2560px)" srcset="./images/img-3-640x421.png">
-                    <img src="./images/img-3-410x270.png" alt="Programador digitando código no notebook">
-                </picture>
-                <p>06 de Maio de 2022</p>
-                <h2>10 dicas para conseguir a vaga desejada</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, minima, velit dolores eligendi
-                    porro veniam autem, facilis hic sapiente ab rem. Eos esse animi exercitationem veritatis amet.
-                    Minus, libero aperiam.</p>
-            </article>
-        </a>
-        <a href="https://hnz.com.br/como-deixar-seu-codigo-limpo/" target="_blank">
-            <article>
-                <picture>
-                    <source media="(max-width: 810px)" srcset="./images/img-4-205x135.png">
-                    <source media="(max-width: 930px)" srcset="./images/img-4-246x162.png">
-                    <source media="(max-width: 1060px)" srcset="./images/img-4-287x189.png">
-                    <source media="(max-width: 1200px)" srcset="./images/img-4-328x216.png">
-                    <source media="(max-width: 1320px)" srcset="./images/img-4-369x243.png">
-                    <source media="(max-width: 1850px)" srcset="./images/img-4-410x270.png">
-                    <source media="(max-width: 2230px)" srcset="./images/img-4-512x337.png">
-                    <source media="(max-width: 2560px)" srcset="./images/img-4-640x421.png">
-                    <img src="./images/img-4-410x270.png" alt="Tela de notebook exibindo trecho de um código-fonte">
-                </picture>
-                <p>15 de Maio de 2022</p>
-                <h2>Deixe seu código mais semântico com essas dicas</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident illum rerum sit inventore optio
-                    blanditiis ducimus. Harum dignissimos sed hic. Et est, aspernatur maxime ex deserunt soluta
-                    voluptatum veritatis repellendus!</p>
-            </article>
-        </a>
-        <a href="https://usemobile.com.br/10-dicas-para-desenvolver-aplicativos-mobile/" target="_blank">
-            <article>
-                <picture>
-                    <source media="(max-width: 810px)" srcset="./images/img-5-205x135.png">
-                    <source media="(max-width: 930px)" srcset="./images/img-5-246x162.png">
-                    <source media="(max-width: 1060px)" srcset="./images/img-5-287x189.png">
-                    <source media="(max-width: 1200px)" srcset="./images/img-5-328x216.png">
-                    <source media="(max-width: 1320px)" srcset="./images/img-5-369x243.png">
-                    <source media="(max-width: 1850px)" srcset="./images/img-5-410x270.png">
-                    <source media="(max-width: 2230px)" srcset="./images/img-5-512x337.png">
-                    <source media="(max-width: 2560px)" srcset="./images/img-5-640x421.png">
-                    <img src="./images/img-5-410x270.png" alt="Pessoa segurando um Smartphone">
-                </picture>
-                <p>29 de Maio de 2022</p>
-                <h2>Use essas dicas nas suas aplicações mobile</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, at. Delectus aliquid earum modi
-                    nobis? Dolores in perspiciatis sit consequuntur atque at laborum saepe molestias? Nostrum, deleniti.
-                    Qui, animi atque.</p>
-            </article>
-        </a>
+        <div id="search_project">
+            <label for="project">Meus projetos</label>
+            <input type="text" id="search_project_name" name="name_project" value="Buscar tags" size="20" />
+        </div>
+        
     </section>
 
-    <hr class="line-stretched">
-        <!-- linha verde que separa a tela -->
-    </hr>
+    <aside class="grid-container">
 
-    <footer class="bg-font-color-default flex-box-space-between height-footer padding-default">
-        <div class="flex-box-column-direction2">
-            <img src="./images/logo.svg" alt="logo_rodape">
-            <p>The Blog 2022</p>
-            <p>Todos os direitos reservados</p>
-        </div>
-        <div class="flex-box-column-direction2">
-            <p>The Blog - O Blog dos DEVs</p>
-            <p class="">CNPJ: 01.234.567/0001-89</p>
-            <a class="flex-box-space-between" href="https://goo.gl/maps/Vs71Y4vZbvd15FaG6" target="_blank">
-                <img src="./images/logo_google_maps.png" alt="logo_google_maps">
-                <p>Av. Paulista, 1366 - 5º andar - São Paulo/SP</p>
-            </a>
-        </div>
-        <div class="flex-box-space-between">
-            <a href="https://www.instagram.com/" target="_blank" class="margin-right-5rem">
-                <img src="./images/logo_instagram_dark.png" alt="logo_instagram">
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank" class="margin-right-5rem">
-                <img src="./images/logo_linkedin_dark.png" alt="logo_linkedin">
-            </a>
-            <a href="https://github.com/" target="_blank" class="margin-right-5rem">
-                <img src="./images/logo_github_dark.png" alt="logo_github">
-            </a>
-            <a href="https://www.youtube.com/" target="_blank">
-                <img src="./images/logo_youtube.png" alt="logo_youtube">
-            </a>
-        </div>
-    </footer>
+         <a href="" target="_blank">
+            <article>
+                <picture>
+                    <source media="(max-width: 810px)" srcset="./images/projects_empty.svg">
+                    <source media="(max-width: 930px)" srcset="./images/projects_empty.svg">
+                    <source media="(max-width: 1060px)" srcset="./images/projects_empty.svg">
+                    <source media="(max-width: 1200px)" srcset="./images/projects_empty.svg">
+                    <source media="(max-width: 1320px)" srcset="./images/projects_empty.svg">
+                    <source media="(max-width: 1850px)" srcset="./images/projects_empty.svg">
+                    <source media="(max-width: 2230px)" srcset="./images/projects_empty.svg">
+                    <source media="(max-width: 2560px)" srcset="./images/projects_empty.svg">
+                    <img src="./images/projects_empty.svg" alt="Adicione um projeto">
+                </picture>
+                <p>Adicione seu primeiro projeto</p>              
+                <p>Compartilhe seu talento com milhares de pessoas</p>
+            </article>
+        </a>
+        <a href="" target="_blank">
+            <article>
+            </article>
+        </a>
+        <a href="" target="_blank">
+            <article>
+            </article>
+        </a>
+    </aside>
 
     <script src="./scripts.js"></script>
 </body>
